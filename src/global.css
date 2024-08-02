@@ -1,14 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poor+Story:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Wallpoet:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Preahvihear:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@400&display=swap");
 body {
-  @apply leading-[normal] m-0;
+  margin: 0;
+  line-height: normal;
 }
-*,
-::before,
-::after {
-  border-width: 0;
+:root {
+  /* fonts */
+  --font-inter: Inter;
+  --font-saira-semi-condensed: "Saira Semi Condensed";
+  --font-preahvihear: Preahvihear;
+  --font-wallpoet: Wallpoet;
+  --font-poor-story: "Poor Story";
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-base: 16px;
+  --font-size-5xl: 24px;
+  --font-size-31xl: 50px;
+  --font-size-11xl: 30px;
+  --font-size-21xl: 40px;
+  --font-size-45xl: 64px;
+  --font-size-7xl: 26px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+  --color-lightgray: #dbd5d5;
+
+  /* Gaps */
+  --gap-xl: 20px;
+
+  /* Paddings */
+  --padding-xl: 20px;
+  --padding-mid: 17px;
 }

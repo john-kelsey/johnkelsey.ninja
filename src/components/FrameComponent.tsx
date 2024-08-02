@@ -1,4 +1,5 @@
 import { FunctionComponent, useCallback } from "react";
+import styles from "./FrameComponent.module.css";
 
 export type FrameComponentType = {
   className?: string;
@@ -7,59 +8,41 @@ export type FrameComponentType = {
 const FrameComponent: FunctionComponent<FrameComponentType> = ({
   className = "",
 }) => {
-  const onBlogLinkContainerClick = useCallback(() => {
-    window.open("https://johnkelsey.hashnode.dev");
+  const onAboutTextClick = useCallback(() => {
+    const anchor = document.querySelector("[data-scroll-to='aboutMeText']");
+    if (anchor) {
+      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+    }
   }, []);
 
-  const onAboutLinkContainerClick = useCallback(() => {
-    document.getElementById("about-section")?.scrollIntoView({ behavior: "smooth" });
+  const onBlogTextClick = useCallback(() => {
+    window.open("johnkelsey.hashnode.dev");
+  }, []);
+
+  const onContactTextClick = useCallback(() => {
+    window.open("https://matrix.to/#/@john-kelsey:matrix.org");
   }, []);
 
   return (
-    <header
-      className={`w-full h-[136px] flex flex-row items-center justify-between py-0 px-5 box-border fixed top-0 left-0 bg-gray-900 z-50 ${className}`}
-    >
-      <style>
-        {`
-          .nav-link {
-            position: relative;
-            cursor: pointer;
-            padding: 10px 15px;
-            color: white;
-            text-decoration: none;
-          }
-          .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -2px;
-            left: 0;
-            background-color: turquoise;
-            transition: width 0.3s;
-          }
-          .nav-link:hover::after {
-            width: 100%;
-          }
-        `}
-      </style>
-      <div className="flex flex-row items-center justify-start p-2.5 box-border z-[1]">
-        <img
-          className="h-[92px] w-24 relative object-cover"
-          loading="lazy"
-          alt="Logo"
-        />
-      </div>
-      <nav className="flex flex-row items-center gap-5">
-        <div className="nav-link" onClick={onBlogLinkContainerClick}>
-          Blog
+    <header className={[styles.profile1Parent, className].join(" ")}>
+      <img
+        className={styles.profile1Icon}
+        loading="lazy"
+        alt=""
+        src="/profile-1@2x.png"
+      />
+      <nav className={styles.aboutContactContainer}>
+        <a className={styles.about} onClick={onAboutTextClick}>
+          .about()
+        </a>
+        <div className={styles.blogWrapper}>
+          <a className={styles.blog} onClick={onBlogTextClick}>
+            .blog()
+          </a>
         </div>
-        <div className="nav-link" onClick={onAboutLinkContainerClick}>
-          About
-        </div>
-        <div className="nav-link">
-          Contact
-        </div>
+        <a className={styles.contact} onClick={onContactTextClick}>
+          .contact()
+        </a>
       </nav>
     </header>
   );

@@ -1,0 +1,457 @@
+.imASoftware,
+.imASoftware1 {
+  margin: 0;
+  width: 480px;
+  height: 63px;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.imASoftware1 {
+  height: 60px;
+  width: 593px;
+}
+.imASoftwareEngineerWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+  font-family: var(--font-wallpoet);
+}
+.imASoftwareEngineerParent,
+.portfolioInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+}
+.imASoftwareEngineerParent {
+  align-self: stretch;
+  gap: 263px;
+  max-width: 100%;
+}
+.portfolioInner {
+  margin-left: -6366px;
+  width: 978px;
+  padding: 301px 0 0;
+  box-sizing: border-box;
+  max-width: calc(100% - 450px);
+}
+.behance,
+.dribbble,
+.instagram,
+.linkedin,
+.logo,
+.p,
+.p1,
+.p2,
+.p3 {
+  margin: 0;
+}
+.linkedinBehanceContainer1 {
+  line-break: anywhere;
+}
+.linkedinBehanceContainer {
+  margin: 0;
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  align-items: center;
+}
+.linkedinBehanceDribbblWrapper {
+  height: 1466px;
+  width: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 818px 0 0;
+  box-sizing: border-box;
+}
+.developedWebhrLanding {
+  width: 820px;
+  position: relative;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+.frameParent,
+.portfolioChild {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.frameParent {
+  width: 1455px;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 var(--padding-xl) 0 0;
+  max-width: 100%;
+  gap: var(--gap-xl);
+  text-align: left;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-preahvihear);
+}
+.portfolioChild {
+  width: 3796px;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1066px 0 0;
+  max-width: 234%;
+}
+.header,
+.webhrLogoVectorized {
+  position: relative;
+  display: none;
+  max-width: 100%;
+}
+.webhrLogoVectorized {
+  height: 1419px;
+  width: 4096px;
+  overflow: hidden;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.header {
+  height: 113px;
+  width: 1428px;
+  box-shadow: 0 6px 22px -3px rgba(0, 0, 0, 0.1);
+  background-color: #1a0b2e;
+  z-index: 3;
+}
+.portfolioItem {
+  height: 1px;
+  width: 1969px;
+  position: absolute;
+  margin: 0 !important;
+  right: -358px;
+  bottom: 1263px;
+  border-top: 1px solid var(--color-white);
+  box-sizing: border-box;
+  z-index: 1;
+}
+.aboutMe {
+  margin: 0;
+  flex: 1;
+  position: relative;
+  font-size: inherit;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  max-width: 100%;
+}
+.aboutMeWrapper {
+  width: 708px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-mid);
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.imJohnKelsey,
+.inAdditionTo {
+  margin: 0;
+}
+.imJohnKelseyContainer {
+  height: 371px;
+  flex: 1;
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.imJohnKelseyAHighSchoolWrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-mid);
+  box-sizing: border-box;
+  max-width: 100%;
+  font-size: var(--font-size-5xl);
+  font-family: var(--font-saira-semi-condensed);
+}
+.image1Icon {
+  width: 915px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.frameDiv,
+.frameWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameDiv {
+  flex: 1;
+  flex-direction: column;
+}
+.frameWrapper {
+  width: 966px;
+  flex-direction: row;
+  padding: 0 6px 160px;
+  box-sizing: border-box;
+}
+.johnKelseyCrafted {
+  width: 707px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+  max-width: 100%;
+  z-index: 3;
+}
+.frameContainer,
+.johnKelseyCraftedByYoursWrapper {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.johnKelseyCraftedByYoursWrapper {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 0 0 363px;
+  max-width: 100%;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-inter);
+}
+.frameContainer {
+  width: 1472px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #000;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 41px 117px 143px;
+  gap: 135px;
+  flex-shrink: 0;
+  max-width: 104%;
+  z-index: 2;
+}
+.profile2Icon {
+  width: 1000px;
+  position: relative;
+  max-height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+.johnKelseyCrafted1 {
+  width: 707px;
+  position: absolute;
+  margin: 0 !important;
+  top: 1240.5px;
+  right: -1993px;
+  display: inline-block;
+}
+.profile2Parent {
+  align-self: stretch;
+  background-color: var(--color-black);
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 798.5px 10px;
+  box-sizing: border-box;
+  position: relative;
+  gap: 10px;
+  flex-shrink: 0;
+  max-width: 102%;
+  margin-top: -2551px;
+  font-size: var(--font-size-xl);
+  font-family: var(--font-inter);
+}
+.frameGroup,
+.portfolio,
+.profile2Parent {
+  display: flex;
+  justify-content: flex-start;
+}
+.frameGroup {
+  height: 2699px;
+  width: 1428px;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  max-width: calc(100% - 6366px);
+  text-align: left;
+  color: var(--color-white);
+  font-family: var(--font-preahvihear);
+}
+.portfolio {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 796px;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  font-size: var(--font-size-31xl);
+  color: var(--color-black);
+  font-family: var(--font-poor-story);
+}
+@media screen and (max-width: 1600px) {
+  .frameGroup,
+  .portfolioInner {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 1275px) {
+  .imASoftwareEngineerParent {
+    gap: 131px;
+  }
+  .portfolioInner {
+    max-width: 100%;
+  }
+  .linkedinBehanceDribbblWrapper {
+    padding-top: 532px;
+    box-sizing: border-box;
+  }
+  .frameParent {
+    flex-wrap: wrap;
+  }
+  .portfolioChild {
+    padding-top: 450px;
+    box-sizing: border-box;
+  }
+  .frameWrapper {
+    padding-bottom: 104px;
+    box-sizing: border-box;
+  }
+  .frameContainer,
+  .johnKelseyCraftedByYoursWrapper {
+    padding-left: 181px;
+    box-sizing: border-box;
+  }
+  .frameContainer {
+    gap: 67px;
+    padding-left: 71px;
+    padding-bottom: 49px;
+  }
+  .profile2Parent {
+    padding-bottom: 337px;
+    box-sizing: border-box;
+  }
+  .frameGroup {
+    max-width: 100%;
+  }
+  .portfolio {
+    gap: 398px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .imASoftware,
+  .imASoftware1 {
+    font-size: var(--font-size-21xl);
+  }
+  .imASoftwareEngineerParent {
+    gap: 66px;
+  }
+  .portfolioInner {
+    padding-top: 196px;
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .linkedinBehanceContainer {
+    font-size: 32px;
+  }
+  .linkedinBehanceDribbblWrapper,
+  .portfolioChild {
+    padding-top: 346px;
+    box-sizing: border-box;
+  }
+  .portfolioChild {
+    padding-top: 292px;
+  }
+  .aboutMe {
+    font-size: var(--font-size-21xl);
+  }
+  .frameWrapper {
+    padding-bottom: 68px;
+    box-sizing: border-box;
+  }
+  .frameContainer,
+  .johnKelseyCraftedByYoursWrapper {
+    padding-left: 90px;
+    box-sizing: border-box;
+  }
+  .frameContainer {
+    gap: 34px;
+    padding-left: 35px;
+    padding-bottom: 32px;
+  }
+  .profile2Parent {
+    padding-bottom: 219px;
+    box-sizing: border-box;
+  }
+  .frameGroup {
+    max-width: 100%;
+  }
+  .portfolio {
+    gap: 199px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .imASoftware,
+  .imASoftware1 {
+    font-size: var(--font-size-11xl);
+  }
+  .portfolioInner {
+    max-width: 100%;
+  }
+  .linkedinBehanceContainer {
+    font-size: var(--font-size-5xl);
+  }
+  .developedWebhrLanding {
+    font-size: 18px;
+  }
+  .aboutMe {
+    font-size: var(--font-size-11xl);
+  }
+  .imJohnKelseyContainer {
+    font-size: 19px;
+  }
+  .johnKelseyCrafted {
+    font-size: var(--font-size-base);
+  }
+  .johnKelseyCraftedByYoursWrapper {
+    padding-left: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .frameContainer {
+    gap: 17px;
+  }
+  .johnKelseyCrafted1 {
+    font-size: var(--font-size-base);
+  }
+  .frameGroup {
+    max-width: 100%;
+  }
+  .portfolio {
+    gap: 99px;
+  }
+}
