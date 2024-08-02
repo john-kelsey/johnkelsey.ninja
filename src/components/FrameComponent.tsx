@@ -11,43 +11,55 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
     window.open("https://johnkelsey.hashnode.dev");
   }, []);
 
+  const onAboutLinkContainerClick = useCallback(() => {
+    document.getElementById("about-section")?.scrollIntoView({ behavior: "smooth" });
+  }, []);
+
   return (
     <header
-      className={`w-[1324px] h-[136px] flex flex-row items-end justify-between py-0 pl-0 pr-5 box-border gap-5 max-w-full ${className}`}
+      className={`w-full h-[136px] flex flex-row items-center justify-between py-0 px-5 box-border fixed top-0 left-0 bg-gray-900 z-50 ${className}`}
     >
-      <div className="self-stretch w-[194px] flex flex-row items-center justify-start p-2.5 box-border z-[1]">
+      <style>
+        {`
+          .nav-link {
+            position: relative;
+            cursor: pointer;
+            padding: 10px 15px;
+            color: white;
+            text-decoration: none;
+          }
+          .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: turquoise;
+            transition: width 0.3s;
+          }
+          .nav-link:hover::after {
+            width: 100%;
+          }
+        `}
+      </style>
+      <div className="flex flex-row items-center justify-start p-2.5 box-border z-[1]">
         <img
           className="h-[92px] w-24 relative object-cover"
           loading="lazy"
-          alt=""
-          src="/profile-1@2x.png"
+          alt="Logo"
         />
       </div>
-      <nav className="m-0 w-[391px] flex flex-col items-start justify-end pt-0 px-0 pb-[5px] box-border max-w-full">
-        <nav className="m-0 self-stretch flex flex-row items-start justify-start text-left text-7xl text-white font-inter">
-          <div className="flex-1 flex flex-col items-start justify-start pt-3 px-0 pb-0">
-            <div className="self-stretch flex flex-row items-start justify-start">
-              <div className="flex-1 overflow-y-auto flex flex-row items-start justify-start p-2.5 z-[1]">
-                <a className="[text-decoration:none] flex-1 relative font-bold text-[inherit]">
-                  .about()
-                </a>
-              </div>
-              <div
-                className="flex flex-row items-start justify-start p-2.5 cursor-pointer z-[2] ml-[-35px]"
-                onClick={onBlogLinkContainerClick}
-              >
-                <a className="[text-decoration:none] relative font-bold text-[inherit] inline-block min-w-[86px]">
-                  .blog()
-                </a>
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-row items-start justify-start py-[22px] px-2.5 z-[1]">
-            <a className="[text-decoration:none] relative font-bold text-[inherit] inline-block min-w-[127px]">
-              .contact()
-            </a>
-          </div>
-        </nav>
+      <nav className="flex flex-row items-center gap-5">
+        <div className="nav-link" onClick={onBlogLinkContainerClick}>
+          Blog
+        </div>
+        <div className="nav-link" onClick={onAboutLinkContainerClick}>
+          About
+        </div>
+        <div className="nav-link">
+          Contact
+        </div>
       </nav>
     </header>
   );

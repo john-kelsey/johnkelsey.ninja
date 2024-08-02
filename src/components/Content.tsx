@@ -1,63 +1,78 @@
-import { FunctionComponent, useCallback } from "react";
+import { FunctionComponent, useEffect } from "react";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
-export type ContentType = {
-  className?: string;
-};
-
-const Content: FunctionComponent<ContentType> = ({ className = "" }) => {
-  const onFrameContainerClick = useCallback(() => {
-    window.open("https://www.linkedin.com/in/john-irungu-k2009/");
-  }, []);
-
-  const onLinkedinContainerClick = useCallback(() => {
-    window.open("github.com/john-kelsey");
+const Content: FunctionComponent = () => {
+  useEffect(() => {
+    const content = document.querySelector(".content");
+    if (content) {
+      content.classList.add("animate-wave");
+    }
   }, []);
 
   return (
-    <div
-      className={`w-[1359px] h-[243px] relative max-w-full text-left text-54xl text-white font-inter mq1050:h-auto mq1050:min-h-[243] ${className}`}
-    >
-      <div className="absolute top-[0px] left-[0px] w-[1339px] flex flex-row items-start justify-between max-w-full gap-5 mq1050:flex-wrap">
-        <b className="w-[730px] relative inline-block shrink-0 opacity-[0.8] max-w-full z-[1] mq450:text-lgi mq1050:text-7xl">
-          <p className="m-0">Hey, I’m John Kelsey</p>
-          <p className="m-0 text-13xl leading-[53px] text-lightgray">
-            ASPIRING FULLSTACK DEVELOPER
-          </p>
-        </b>
-        <div className="flex flex-col items-start justify-start pt-7 px-0 pb-0">
-          <div className="flex flex-col items-start justify-start gap-4">
-            <div className="flex flex-row items-start justify-start py-0 px-2.5">
-              <img
-                className="h-[47px] w-[47px] relative z-[1]"
-                loading="lazy"
-                alt=""
-                src="/vector.svg"
-              />
-            </div>
-            <div
-              className="h-[47px] flex flex-col items-start justify-start p-2.5 box-border cursor-pointer z-[1]"
-              onClick={onFrameContainerClick}
-            >
-              <img
-                className="w-[47px] h-[47px] relative"
-                loading="lazy"
-                alt=""
-                src="/vector-1.svg"
-              />
-            </div>
-          </div>
-        </div>
+    <div className="w-full h-screen flex flex-col items-center justify-center bg-gray-900 relative">
+      <style>
+        {`
+          @keyframes wave {
+            0% {
+              transform: translateY(100%);
+            }
+            50% {
+              transform: translateY(-10%);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+
+          .animate-wave {
+            animation: wave 2s ease-in-out forwards;
+          }
+
+          .social-icons {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+          }
+
+          .social-icons a {
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s;
+          }
+
+          .social-icons a:hover {
+            transform: scale(1.1);
+          }
+
+          @media (max-width: 768px) {
+            .social-icons {
+              bottom: 10px;
+              right: 10px;
+            }
+
+            .social-icons a {
+              font-size: 20px;
+            }
+          }
+        `}
+      </style>
+      <div className="content text-center text-white">
+        <h1 className="text-5xl font-bold mb-4">Welcome to My Page</h1>
+        <p className="text-xl">This is a sample content with wave-like animation.</p>
       </div>
-      <div
-        className="absolute top-[184px] left-[1272px] w-[67px] h-[59px] overflow-hidden flex flex-col items-start justify-start py-0.5 px-0 box-border cursor-pointer z-[1]"
-        onClick={onLinkedinContainerClick}
-      >
-        <img
-          className="self-stretch h-[57px] relative max-w-full overflow-hidden shrink-0"
-          loading="lazy"
-          alt=""
-          src="/vector-2.svg"
-        />
+      <div className="social-icons">
+        <a href="https://github.com/john-kelsey" target="_blank" rel="noopener noreferrer">
+          <FaGithub />
+        </a>
+        <a href="https://linkedin.com/in/john-kelsey" target="_blank" rel="noopener noreferrer">
+          <FaLinkedin />
+        </a>
+        <a href="https://twitter.com/john-kelsey" target="_blank" rel="noopener noreferrer">
+          <FaTwitter />
+        </a>
       </div>
     </div>
   );
