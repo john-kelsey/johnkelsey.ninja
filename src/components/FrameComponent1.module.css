@@ -18,12 +18,14 @@
 }
 .githubContainerParent {
   position: absolute;
-  top: 431px;
-  left: 1038px;
+  top: 20px;
+  right: 20px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 10px;
+  z-index: 3;
 }
 .gradient {
   position: absolute;
@@ -45,9 +47,11 @@
 }
 .gradientParent {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 507px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 507px;
   height: 591px;
 }
 .heyImJohn {
@@ -61,26 +65,31 @@
 }
 .heyImJohnContainer {
   position: absolute;
-  top: 214px;
-  left: 483px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: inline-block;
-  width: 805px;
-  height: 131px;
+  width: 90%;
+  max-width: 805px;
   opacity: 0.8;
   z-index: 2;
+  text-align: center;
 }
 .twitterIcon {
   position: absolute;
-  top: 567px;
-  left: 1068px;
+  bottom: 20px;
+  right: 20px;
   width: 48px;
   height: 48px;
   overflow: hidden;
   cursor: pointer;
+  z-index: 3;
 }
 .frameParent {
   align-self: stretch;
-  height: 619px;
+  min-height: 600px;
+  height: 100vh;
+  max-height: 800px;
   position: relative;
   text-align: left;
   font-size: var(--font-size-45xl);

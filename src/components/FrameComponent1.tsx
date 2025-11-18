@@ -9,15 +9,15 @@ const FrameComponent1: FunctionComponent<FrameComponent1Type> = ({
   className = "",
 }) => {
   const onGithubContainerClick = useCallback(() => {
-    window.open("linkedin.com/in/john-irungu-k2009/");
+    window.open("https://linkedin.com/in/john-irungu-k2009/");
   }, []);
 
   const onGithubIconClick = useCallback(() => {
-    window.open("github.com/john-kelsey");
+    window.open("https://github.com/john-kelsey");
   }, []);
 
   const onTwitterIconClick = useCallback(() => {
-    window.open("twitter.com/john_k_irungu");
+    window.open("https://twitter.com/john_k_irungu");
   }, []);
 
   return (

@@ -16,7 +16,7 @@ const FrameComponent: FunctionComponent<FrameComponentType> = ({
   }, []);
 
   const onBlogTextClick = useCallback(() => {
-    window.open("johnkelsey.hashnode.dev");
+    window.open("https://johnkelsey.hashnode.dev");
   }, []);
 
   const onContactTextClick = useCallback(() => {
