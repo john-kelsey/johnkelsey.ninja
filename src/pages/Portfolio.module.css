@@ -40,11 +40,7 @@
   max-width: 100%;
 }
 .portfolioInner {
-  margin-left: -6366px;
-  width: 978px;
-  padding: 301px 0 0;
-  box-sizing: border-box;
-  max-width: calc(100% - 450px);
+  display: none;
 }
 .behance,
 .dribbble,
@@ -111,11 +107,7 @@
   font-family: var(--font-preahvihear);
 }
 .portfolioChild {
-  width: 3796px;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 1066px 0 0;
-  max-width: 234%;
+  display: none;
 }
 .header,
 .webhrLogoVectorized {
@@ -234,20 +226,20 @@
   align-self: stretch;
   flex-direction: row;
   justify-content: center;
-  padding: 0 0 0 363px;
+  padding: 0 20px;
   max-width: 100%;
   font-size: var(--font-size-xl);
   font-family: var(--font-inter);
 }
 .frameContainer {
-  width: 1472px;
+  width: 100%;
+  max-width: 1472px;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #000;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 0 41px 117px 143px;
-  gap: 135px;
+  padding: 40px 20px 60px;
+  gap: 60px;
   flex-shrink: 0;
-  max-width: 104%;
   z-index: 2;
 }
 .profile2Icon {
@@ -266,19 +258,7 @@
   display: inline-block;
 }
 .profile2Parent {
-  align-self: stretch;
-  background-color: var(--color-black);
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 798.5px 10px;
-  box-sizing: border-box;
-  position: relative;
-  gap: 10px;
-  flex-shrink: 0;
-  max-width: 102%;
-  margin-top: -2551px;
-  font-size: var(--font-size-xl);
-  font-family: var(--font-inter);
+  display: none;
 }
 .frameGroup,
 .portfolio,
@@ -287,14 +267,14 @@
   justify-content: flex-start;
 }
 .frameGroup {
-  height: 2699px;
-  width: 1428px;
+  width: 100%;
+  max-width: 1428px;
+  margin: 0 auto;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   padding: 0;
   box-sizing: border-box;
   flex-shrink: 0;
-  max-width: calc(100% - 6366px);
   text-align: left;
   color: var(--color-white);
   font-family: var(--font-preahvihear);
@@ -303,10 +283,10 @@
   width: 100%;
   position: relative;
   background-color: var(--color-white);
-  overflow: hidden;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 796px;
+  overflow-x: hidden;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
@@ -342,14 +322,15 @@
     padding-bottom: 104px;
     box-sizing: border-box;
   }
-  .frameContainer,
   .johnKelseyCraftedByYoursWrapper {
-    padding-left: 181px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
   }
   .frameContainer {
     gap: 67px;
-    padding-left: 71px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 49px;
   }
   .profile2Parent {
@@ -360,7 +341,7 @@
     max-width: 100%;
   }
   .portfolio {
-    gap: 398px;
+    gap: 40px;
   }
 }
 @media screen and (max-width: 900px) {
@@ -394,14 +375,15 @@
     padding-bottom: 68px;
     box-sizing: border-box;
   }
-  .frameContainer,
   .johnKelseyCraftedByYoursWrapper {
-    padding-left: 90px;
+    padding-left: 20px;
+    padding-right: 20px;
     box-sizing: border-box;
   }
   .frameContainer {
     gap: 34px;
-    padding-left: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 32px;
   }
   .profile2Parent {
@@ -412,7 +394,7 @@
     max-width: 100%;
   }
   .portfolio {
-    gap: 199px;
+    gap: 40px;
   }
 }
 @media screen and (max-width: 450px) {
@@ -440,10 +422,13 @@
   }
   .johnKelseyCraftedByYoursWrapper {
     padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
     box-sizing: border-box;
   }
   .frameContainer {
     gap: 17px;
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
   }
   .johnKelseyCrafted1 {
     font-size: var(--font-size-base);
@@ -452,6 +437,6 @@
     max-width: 100%;
   }
   .portfolio {
-    gap: 99px;
+    gap: 20px;
   }
 }
